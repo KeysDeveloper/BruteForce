@@ -53,9 +53,7 @@ public class BruteForce implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
         if(sender instanceof Player) {
-
-            //I did this because I wanted the program to go a bit faster and I just didnt want to google how to make some of this happen
-            ((Player)sender).sendMessage("ONLY NUMBERS, SYMBOLS, AND LETTERS NO SPECIAL CHARACTERS AND SPACES OR SLASHES OF ANY KIND OR QUOTATION MARKS (because I don't wanna search up how to register these kind of things and to make it easier for the program :) )");
+            ((Player)sender).sendMessage("NO SPECIAL CHARACTERS (anything that is not on a regular keyboard)");
 
             if(args.length == 1) {
                 password = args[0];
